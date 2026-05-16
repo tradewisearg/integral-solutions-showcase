@@ -1,4 +1,4 @@
-// Preguntas frecuentes.
+// FAQ minimalista.
 import {
   Accordion,
   AccordionContent,
@@ -19,29 +19,30 @@ const faqs = [
 
 export function FAQ() {
   return (
-    <section id="faq" className="py-24 bg-secondary">
-      <div className="mx-auto max-w-4xl px-6">
-        <div className="text-center max-w-2xl mx-auto">
-          <span className="text-sm font-semibold text-accent uppercase tracking-wider">FAQ</span>
-          <h2 className="mt-2 text-4xl md:text-5xl font-bold text-primary">
-            Preguntas frecuentes
+    <section id="faq" className="py-24 md:py-32 bg-background">
+      <div className="mx-auto max-w-4xl px-6 lg:px-10">
+        <div className="max-w-2xl">
+          <span className="text-xs font-semibold uppercase tracking-[0.25em] text-accent">
+            FAQ
+          </span>
+          <h2 className="mt-6 text-4xl md:text-6xl font-display font-bold text-primary leading-[1.05]">
+            Preguntas
+            <br />
+            <span className="text-foreground/40">frecuentes.</span>
           </h2>
-          <p className="mt-4 text-muted-foreground text-lg">
-            Todo lo que necesitás saber antes de contactarnos.
-          </p>
         </div>
 
-        <Accordion type="single" collapsible className="mt-12 space-y-3">
+        <Accordion type="single" collapsible className="mt-14 divide-y divide-border border-t border-b border-border">
           {faqs.map((f, i) => (
             <AccordionItem
               key={i}
               value={`item-${i}`}
-              className="rounded-2xl border border-border bg-card px-6 shadow-[var(--shadow-card)]"
+              className="border-0"
             >
-              <AccordionTrigger className="text-left text-lg font-semibold text-primary hover:no-underline py-5">
+              <AccordionTrigger className="text-left text-lg md:text-xl font-display font-semibold text-primary hover:no-underline py-6 hover:text-accent transition-colors">
                 {f.q}
               </AccordionTrigger>
-              <AccordionContent className="text-base text-muted-foreground leading-relaxed pb-5">
+              <AccordionContent className="text-base md:text-lg text-muted-foreground leading-relaxed pb-6 font-light">
                 {f.a}
               </AccordionContent>
             </AccordionItem>
