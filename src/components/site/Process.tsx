@@ -1,10 +1,10 @@
 // Proceso en 3 pasos.
-import { Phone, FileText, CheckCircle2 } from "lucide-react";
+import { MessageSquare, ClipboardCheck, CheckCircle2 } from "lucide-react";
 
 const steps = [
-  { icon: Phone, n: "01", title: "Contacto inicial", desc: "Nos escribís, te escuchamos y entendemos qué necesitás." },
-  { icon: FileText, n: "02", title: "Organización y presupuesto", desc: "Te pasamos un presupuesto claro y armamos el plan de trabajo." },
-  { icon: CheckCircle2, n: "03", title: "Ejecución y seguimiento", desc: "Hacemos el trabajo y te mantenemos al tanto de cada avance." },
+  { icon: MessageSquare, n: "01", title: "Nos contactás", desc: "Nos enviás el problema por WhatsApp con fotos y detalles." },
+  { icon: ClipboardCheck, n: "02", title: "Evaluamos y organizamos", desc: "Coordinamos visita sin costo y te pasamos presupuesto en 24hs." },
+  { icon: CheckCircle2, n: "03", title: "Resolución completa", desc: "Realizamos el trabajo de forma rápida, limpia y eficiente." },
 ];
 
 export function Process() {

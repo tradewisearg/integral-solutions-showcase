@@ -17,6 +17,7 @@ export function Navbar() {
           <a href="#proceso" className="hover:text-primary transition">Cómo trabajamos</a>
           <a href="#galeria" className="hover:text-primary transition">Galería</a>
           <a href="#nosotros" className="hover:text-primary transition">Nosotros</a>
+          <a href="#faq" className="hover:text-primary transition">FAQ</a>
         </nav>
         <a
           href={whatsappLink}
