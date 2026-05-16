@@ -1,12 +1,11 @@
 // Sección de servicios con cards y íconos.
-import { Zap, Droplets, Hammer, HardHat, ClipboardList } from "lucide-react";
+import { Droplets, Hammer, Paintbrush, Wrench } from "lucide-react";
 
 const services = [
-  { icon: Zap, title: "Electricidad", desc: "Instalaciones, tableros, reparaciones y mantenimiento eléctrico." },
-  { icon: Droplets, title: "Plomería", desc: "Soluciones de agua, gas y desagües con respuesta rápida." },
-  { icon: Hammer, title: "Mantenimiento general", desc: "Cuidado periódico para que todo funcione siempre bien." },
-  { icon: HardHat, title: "Obras y reparaciones", desc: "Refacciones, ampliaciones y arreglos prolijos llave en mano." },
-  { icon: ClipboardList, title: "Seguimiento de trabajos", desc: "Te informamos avances, plazos y resultados sin vueltas." },
+  { icon: Droplets, title: "Plomería", desc: "Reparaciones, instalaciones, pérdidas y mantenimiento general." },
+  { icon: Hammer, title: "Albañilería", desc: "Refacciones, arreglos estructurales y mantenimiento edilicio." },
+  { icon: Paintbrush, title: "Pintura", desc: "Trabajos interiores y exteriores con terminaciones prolijas." },
+  { icon: Wrench, title: "Mantenimiento general", desc: "Soluciones completas para consorcios y administraciones." },
 ];
 
 export function Services() {
@@ -16,7 +15,7 @@ export function Services() {
         <div className="max-w-2xl">
           <span className="text-sm font-semibold text-accent uppercase tracking-wider">Servicios</span>
           <h2 className="mt-2 text-4xl md:text-5xl font-bold text-primary">
-            Resolvemos todo lo que tu espacio necesita
+            Resolvemos todo lo que tu edificio necesita
           </h2>
           <p className="mt-4 text-muted-foreground text-lg">
             Un equipo, varias especialidades. Coordinación clara y resultados
@@ -24,7 +23,7 @@ export function Services() {
           </p>
         </div>
 
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {services.map(({ icon: Icon, title, desc }) => (
             <article
               key={title}

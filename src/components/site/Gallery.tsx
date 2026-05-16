@@ -6,11 +6,12 @@ import g2 from "@/assets/gallery-2.jpg";
 import g3 from "@/assets/gallery-3.jpg";
 import g4 from "@/assets/gallery-4.jpg";
 
+// "Trabajos recientes": fotos reales, fecha y tipo de trabajo.
 const items = [
-  { src: g2, title: "Antes / Después", desc: "Renovación completa de baño." },
-  { src: g1, title: "Tablero eléctrico", desc: "Instalación y puesta en seguridad." },
-  { src: g3, title: "Pintura interior", desc: "Refacción de oficinas." },
-  { src: g4, title: "Reparación estructural", desc: "Trabajos de obra y mantenimiento." },
+  { src: g2, tag: "Plomería", date: "Mayo 2026", title: "Reparación de pérdida", place: "Edificio en Palermo" },
+  { src: g1, tag: "Mantenimiento", date: "Abril 2026", title: "Tablero eléctrico", place: "Consorcio en Recoleta" },
+  { src: g3, tag: "Pintura", date: "Marzo 2026", title: "Pintura de palier", place: "Edificio en Caballito" },
+  { src: g4, tag: "Albañilería", date: "Marzo 2026", title: "Arreglo estructural", place: "Consorcio en Belgrano" },
 ];
 
 export function Gallery() {
@@ -27,13 +28,12 @@ export function Gallery() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="flex items-end justify-between gap-6 flex-wrap">
           <div className="max-w-2xl">
-            <span className="text-sm font-semibold text-accent uppercase tracking-wider">Galería</span>
+            <span className="text-sm font-semibold text-accent uppercase tracking-wider">Trabajos recientes</span>
             <h2 className="mt-2 text-4xl md:text-5xl font-bold text-primary">
-              Trabajos reales, resultados que hablan
+              Trabajos reales — antes y después
             </h2>
             <p className="mt-4 text-muted-foreground text-lg">
-              Mirá algunos de nuestros proyectos: antes, después y todo lo que
-              hay en el medio.
+              Mostramos resultados reales de nuestro trabajo en consorcios de CABA.
             </p>
           </div>
           <div className="flex gap-2">
@@ -60,20 +60,28 @@ export function Gallery() {
         >
           {items.map((it) => (
             <figure
-              key={it.title}
+              key={it.title + it.place}
               className="relative shrink-0 w-[85%] sm:w-[60%] lg:w-[45%] snap-start group overflow-hidden rounded-2xl shadow-[var(--shadow-card)]"
             >
               <img
                 src={it.src}
-                alt={it.title}
+                alt={`${it.title} — ${it.place}`}
                 width={1024}
                 height={768}
                 loading="lazy"
                 className="w-full h-[380px] md:h-[460px] object-cover group-hover:scale-105 transition duration-700"
               />
+              <div className="absolute top-4 left-4 flex gap-2">
+                <span className="rounded-full bg-accent text-accent-foreground px-3 py-1 text-xs font-semibold uppercase tracking-wider">
+                  {it.tag}
+                </span>
+                <span className="rounded-full bg-brand-black/70 text-white px-3 py-1 text-xs font-medium backdrop-blur">
+                  {it.date}
+                </span>
+              </div>
               <figcaption className="absolute inset-x-0 bottom-0 p-6 bg-gradient-to-t from-brand-black/85 to-transparent text-primary-foreground">
-                <p className="text-xs font-semibold uppercase tracking-wider text-accent">{it.title}</p>
-                <p className="mt-1 text-lg font-semibold">{it.desc}</p>
+                <p className="text-lg font-semibold">{it.title}</p>
+                <p className="mt-1 text-sm text-primary-foreground/80">{it.place}</p>
               </figcaption>
             </figure>
           ))}

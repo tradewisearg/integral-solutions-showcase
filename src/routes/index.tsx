@@ -5,6 +5,7 @@ import { Services } from "@/components/site/Services";
 import { Process } from "@/components/site/Process";
 import { Gallery } from "@/components/site/Gallery";
 import { About } from "@/components/site/About";
+import { FAQ } from "@/components/site/FAQ";
 import { CTA } from "@/components/site/CTA";
 import { Footer } from "@/components/site/Footer";
 import { WhatsAppFab } from "@/components/site/WhatsAppFab";
@@ -39,6 +40,7 @@ function Index() {
         <Process />
         <Gallery />
         <About />
+        <FAQ />
         <CTA />
       </main>
       <Footer />
