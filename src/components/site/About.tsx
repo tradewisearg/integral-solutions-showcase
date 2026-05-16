@@ -1,49 +1,37 @@
-// Quiénes somos + información clave.
-import { MapPin, Clock, MessageCircle, FileText, HardHat } from "lucide-react";
-import { RESPONSIBLE_NAME } from "@/lib/site";
-
-const info = [
-  { icon: MapPin, title: "Zona", desc: "CABA" },
-  { icon: Clock, title: "Atención", desc: "24 horas" },
-  { icon: MessageCircle, title: "Respuesta", desc: "Dentro de 1 hora" },
-  { icon: FileText, title: "Presupuesto", desc: "Sin cargo y sin compromiso" },
-  { icon: HardHat, title: "Responsable", desc: RESPONSIBLE_NAME },
-];
+// Quiénes somos: imagen + texto, layout asimétrico premium.
+import g1 from "@/assets/gallery-1.jpg";
+import { useReveal } from "@/hooks/use-reveal";
 
 export function About() {
+  const { ref, visible } = useReveal<HTMLDivElement>();
   return (
-    <section id="nosotros" className="py-24 bg-primary text-primary-foreground">
-      <div className="mx-auto max-w-7xl px-6 grid lg:grid-cols-2 gap-16 items-start">
+    <section id="nosotros" className="py-24 md:py-32 bg-background">
+      <div
+        ref={ref}
+        className={`mx-auto max-w-7xl px-6 lg:px-10 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center ${
+          visible ? "animate-[fade-up_1s_ease-out_both]" : "opacity-0"
+        }`}
+      >
         <div>
-          <span className="text-sm font-semibold text-accent uppercase tracking-wider">Quiénes somos</span>
-          <h2 className="mt-2 text-4xl md:text-5xl font-bold">
-            +20 años resolviendo edificios en CABA
+          <span className="text-xs font-semibold uppercase tracking-[0.25em] text-accent">
+            Quiénes somos
+          </span>
+          <h2 className="mt-6 text-4xl md:text-5xl lg:text-6xl font-display font-bold text-primary leading-[1.05]">
+            Más de 20 años resolviendo problemas reales.
           </h2>
-          <p className="mt-6 text-lg text-primary-foreground/80 leading-relaxed">
-            Somos un equipo con más de 20 años de experiencia en mantenimiento
-            y reparaciones para consorcios y administradores.
-          </p>
-          <p className="mt-4 text-lg text-primary-foreground/80 leading-relaxed">
-            Trabajamos con personal capacitado y matriculado, brindando
-            soluciones rápidas, eficientes y con seguimiento en cada trabajo.
+          <p className="mt-8 text-lg md:text-xl text-muted-foreground leading-relaxed font-light">
+            Trabajamos con rapidez, orden y responsabilidad en consorcios de
+            CABA. Nuestro objetivo es simple: que no tengas que preocuparte.
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 gap-4">
-          {info.map(({ icon: Icon, title, desc }) => (
-            <div
-              key={title}
-              className="rounded-2xl border border-primary-foreground/15 bg-primary-foreground/5 p-6 backdrop-blur-sm hover:border-accent transition"
-            >
-              <div className="grid place-items-center w-11 h-11 rounded-lg bg-accent text-accent-foreground">
-                <Icon size={20} />
-              </div>
-              <h3 className="mt-4 text-sm font-semibold uppercase tracking-wider text-primary-foreground/70">
-                {title}
-              </h3>
-              <p className="mt-1 text-lg font-bold">{desc}</p>
-            </div>
-          ))}
+        <div className="relative aspect-[4/5] lg:aspect-[3/4] overflow-hidden rounded-3xl">
+          <img
+            src={g1}
+            alt="Equipo trabajando en consorcio"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-brand-black/30 to-transparent" />
         </div>
       </div>
     </section>

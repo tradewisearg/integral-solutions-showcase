@@ -37,8 +37,20 @@
   --color-brand-black: var(--brand-black);
   --color-brand-gray: var(--brand-gray);
 
-  --shadow-soft: 0 10px 30px -12px rgb(31 58 95 / 0.18);
-  --shadow-card: 0 4px 20px -8px rgb(26 26 26 / 0.12);
+  --shadow-soft: 0 20px 50px -20px rgb(31 58 95 / 0.18);
+  --shadow-card: 0 2px 24px -8px rgb(26 26 26 / 0.08);
+
+  --animate-fade-in: fade-in 0.7s ease-out both;
+  --animate-fade-up: fade-up 0.8s ease-out both;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
 :root {
@@ -58,21 +70,21 @@
 
   --primary: #1F3A5F;
   --primary-foreground: #FFFFFF;
-  --secondary: #F4F6F9;
+  --secondary: #F7F8FA;
   --secondary-foreground: #1F3A5F;
   --accent: #F2B705;
   --accent-foreground: #1A1A1A;
-  --muted: #F4F6F9;
-  --muted-foreground: #5b6b80;
+  --muted: #F7F8FA;
+  --muted-foreground: #6b7a8f;
   --destructive: #c0392b;
   --destructive-foreground: #FFFFFF;
-  --border: #E5E5E5;
-  --input: #E5E5E5;
+  --border: #ECEEF2;
+  --input: #ECEEF2;
   --ring: #1F3A5F;
 }
 
 @layer base {
-  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap");
 
   * {
     border-color: var(--color-border);
@@ -87,10 +99,20 @@
     color: var(--color-foreground);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
   }
 
   h1, h2, h3, h4 {
     font-family: var(--font-display);
-    letter-spacing: -0.02em;
+    letter-spacing: -0.025em;
+  }
+}
+
+@layer utilities {
+  .hover-lift {
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+  }
+  .hover-lift:hover {
+    transform: translateY(-4px) scale(1.01);
   }
 }
