@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap");
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* Brand: Soluciones Integrales
+   Azul #1F3A5F · Amarillo #F2B705 · Negro #1A1A1A · Gris #E5E5E5 · Blanco #FFFFFF */
+
+@theme inline {
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-brand-navy: var(--brand-navy);
+  --color-brand-yellow: var(--brand-yellow);
+  --color-brand-black: var(--brand-black);
+  --color-brand-gray: var(--brand-gray);
+
+  --shadow-soft: 0 20px 50px -20px rgb(31 58 95 / 0.18);
+  --shadow-card: 0 2px 24px -8px rgb(26 26 26 / 0.08);
+
+  --animate-fade-in: fade-in 0.7s ease-out both;
+  --animate-fade-up: fade-up 0.8s ease-out both;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+:root {
+  --radius: 0.75rem;
+
+  --brand-navy: #1f3a5f;
+  --brand-yellow: #f2b705;
+  --brand-black: #1a1a1a;
+  --brand-gray: #e5e5e5;
+
+  --background: #ffffff;
+  --foreground: #1a1a1a;
+  --card: #ffffff;
+  --card-foreground: #1a1a1a;
+  --popover: #ffffff;
+  --popover-foreground: #1a1a1a;
+
+  --primary: #1f3a5f;
+  --primary-foreground: #ffffff;
+  --secondary: #f7f8fa;
+  --secondary-foreground: #1f3a5f;
+  --accent: #f2b705;
+  --accent-foreground: #1a1a1a;
+  --muted: #f7f8fa;
+  --muted-foreground: #6b7a8f;
+  --destructive: #c0392b;
+  --destructive-foreground: #ffffff;
+  --border: #eceef2;
+  --input: #eceef2;
+  --ring: #1f3a5f;
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.025em;
+  }
+}
+
+@layer utilities {
+  .hover-lift {
+    transition:
+      transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+      box-shadow 0.4s ease;
+  }
+  .hover-lift:hover {
+    transform: translateY(-4px) scale(1.01);
+  }
+
+  .section-surface {
+    background-color: #f8f4ec;
+    background-image:
+      radial-gradient(circle at top left, rgba(242, 183, 5, 0.08), transparent 20%),
+      radial-gradient(circle at bottom right, rgba(31, 58, 95, 0.05), transparent 24%),
+      linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(245, 241, 235, 0.96));
+  }
+}
