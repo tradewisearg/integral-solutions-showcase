@@ -12,7 +12,7 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "Soluciones Integrales · Mantenimiento integral de edificios en CABA" },
+      { title: "Soluciones Integrales ·Edificios en CABA" },
       {
         name: "description",
         content:
