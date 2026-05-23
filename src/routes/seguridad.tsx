@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
-// Este archivo ya no se utiliza - la aplicación usa App.tsx sin routing
+import { Navbar } from "@/components/site/Navbar";
+import { BeforeAfter } from "@/components/site/BeforeAfter";
+import { Footer } from "@/components/site/Footer";
+import { WhatsAppFab } from "@/components/site/WhatsAppFab";
 
 export function SeguridadPage() {
   const [count, setCount] = useState(0);
