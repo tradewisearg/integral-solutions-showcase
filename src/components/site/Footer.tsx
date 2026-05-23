@@ -3,13 +3,13 @@ import { COMPANY_NAME, whatsappLink } from "@/lib/site";
 export function Footer() {
   return (
     <footer className="bg-brand-black text-white/80">
-      <div className="mx-auto max-w-7xl px-6 lg:px-10 py-20 grid gap-12 md:grid-cols-3">
-        <div className="flex flex-col gap-6">
-          <div className="flex items-center gap-4">
+      <div className="mx-auto grid max-w-7xl gap-12 px-6 py-16 text-center md:grid-cols-[1fr_auto] md:items-center md:text-left lg:px-10 lg:py-20">
+        <div className="flex flex-col items-center gap-6 md:items-start">
+          <div className="flex flex-col items-center gap-4 sm:flex-row">
             <img src="/logo-footer.svg" alt="Logo de la empresa" className="h-12 w-auto" />
-            <p className="font-display font-extrabold text-white text-2xl">{COMPANY_NAME}</p>
+            <p className="font-display text-2xl font-extrabold text-white">{COMPANY_NAME}</p>
           </div>
-          <p className="text-sm text-white/55 max-w-xs leading-relaxed">
+          <p className="max-w-xs text-sm leading-relaxed text-white/55">
             Mantenimiento integral en CABA para edificios, locales y espacios comunes.
           </p>
         </div>
@@ -20,15 +20,15 @@ export function Footer() {
             href={whatsappLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-5 inline-flex items-center gap-2 rounded-full bg-accent text-accent-foreground px-6 py-3 text-sm font-semibold hover:brightness-95 transition"
+            className="mt-5 inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-semibold text-accent-foreground transition hover:brightness-95"
           >
             WhatsApp
           </a>
         </div>
       </div>
       <div className="border-t border-white/10">
-        <div className="mx-auto max-w-7xl px-6 lg:px-10 py-6 text-xs text-white/40 flex flex-wrap justify-between gap-2">
-          <p>
+        <div className="mx-auto flex max-w-7xl justify-center px-6 py-6 text-center text-xs text-white/40 lg:px-10">
+          <p className="max-w-full leading-relaxed">
             © {new Date().getFullYear()} {COMPANY_NAME}. Todos los derechos reservados.
           </p>
         </div>
