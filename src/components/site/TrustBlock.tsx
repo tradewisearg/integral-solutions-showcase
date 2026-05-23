@@ -1,11 +1,10 @@
-// Bloque de confianza: 3 columnas con íconos finos.
 import { Zap, Award, Eye } from "lucide-react";
 import { useReveal } from "@/hooks/use-reveal";
 
 const pillars = [
-  { icon: Zap, title: "Rapidez", desc: "Respondemos en menos de 1 hora." },
-  { icon: Award, title: "Profesionalismo", desc: "Equipo matriculado con experiencia real." },
-  { icon: Eye, title: "Seguimiento", desc: "Nos encargamos hasta que esté resuelto." },
+  { icon: Zap, title: "Respuesta", desc: "Priorizamos urgencias y coordinamos con claridad." },
+  { icon: Award, title: "Oficio", desc: "Trabajos hechos por gente con experiencia en edificios." },
+  { icon: Eye, title: "Seguimiento", desc: "Dejamos registro y acompañamos hasta la entrega." },
 ];
 
 export function TrustBlock() {

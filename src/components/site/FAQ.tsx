@@ -1,4 +1,3 @@
-// FAQ minimalista con animaciones mejoradas.
 import { useReveal } from "@/hooks/use-reveal";
 import { Skeleton } from "@/components/ui/skeleton";
 import {
@@ -11,27 +10,27 @@ import {
 const faqs = [
   {
     q: "¿La visita y el presupuesto cuestan algo?",
-    a: "No. La visita es gratuita y el presupuesto es sin cargo y sin compromiso en CABA.",
+    a: "La consulta inicial es sin cargo. Según el trabajo y la zona, coordinamos la visita y te avisamos todo antes de avanzar.",
   },
   {
     q: "¿Cómo evitan que haya costos sorpresa?",
-    a: "Entregamos presupuestos detallados por escrito, con precio claro y sin costos ocultos.",
+    a: "Presupuestamos por escrito, detallando alcance, materiales y mano de obra cuando corresponde.",
   },
   {
     q: "¿Atienen urgencias?",
-    a: "Sí. Respuesta urgente en menos de 1 hora dentro de CABA con coordinación inmediata por WhatsApp.",
+    a: "Sí. Tomamos urgencias en CABA y priorizamos los casos que comprometen el uso del edificio o local.",
   },
   {
     q: "¿Qué tipo de trabajos pueden hacer?",
-    a: "Plomería, albañilería, pintura, electricista, arreglos de palieres y mantenimiento integral.",
+    a: "Plomería, albañilería, pintura, electricidad, arreglos de palieres y mantenimiento general.",
   },
   {
     q: "¿Quiénes son los responsables de la obra?",
-    a: "Equipo propio de operarios matriculados y con experiencia real en edificios.",
+    a: "Trabajamos con responsables definidos y operarios de oficio, acostumbrados a edificios y consorcios.",
   },
   {
     q: "¿Puedo recibir factura y garantía?",
-    a: "Sí. Emitimos factura para cada trabajo y tiene seguimiento hasta su finalización.",
+    a: "Sí. Emitimos factura y dejamos aclaradas las condiciones de garantía según el tipo de reparación.",
   },
   {
     q: "¿Cómo pido el servicio?",
@@ -39,7 +38,7 @@ const faqs = [
   },
   {
     q: "¿Cómo saben que trabajamos bien?",
-    a: "Nuestros clientes recomiendan la rapidez, orden y limpieza. Ofrecemos fotos y detalles durante el proceso.",
+    a: "Compartimos avances, fotos cuando hace falta y detalle de lo realizado para que quede registro del trabajo.",
   },
 ];
 

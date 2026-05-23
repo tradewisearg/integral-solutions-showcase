@@ -1,5 +1,4 @@
-// Footer premium minimalista.
-import { COMPANY_NAME, whatsappLink, RESPONSIBLE_NAME } from "@/lib/site";
+import { COMPANY_NAME, whatsappLink } from "@/lib/site";
 
 export function Footer() {
   return (
@@ -11,7 +10,7 @@ export function Footer() {
             <p className="font-display font-extrabold text-white text-2xl">{COMPANY_NAME}</p>
           </div>
           <p className="text-sm text-white/55 max-w-xs leading-relaxed">
-            Mantenimiento integral en CABA. Rápido, prolijo y sin complicaciones.
+            Mantenimiento integral en CABA para edificios, locales y espacios comunes.
           </p>
         </div>
 

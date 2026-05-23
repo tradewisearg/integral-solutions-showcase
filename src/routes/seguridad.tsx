@@ -33,13 +33,13 @@ export function SeguridadPage() {
             Seguridad y respaldo
           </span>
           <h1 className="mt-6 text-5xl md:text-6xl font-display font-bold text-primary leading-tight">
-            Garantía de trabajo serio
+            Respaldo para trabajar tranquilos
             <br />
-            para tu edificio.
+            en tu edificio.
           </h1>
           <p className="mt-6 max-w-3xl text-lg leading-relaxed text-foreground/70">
-            Una página dedicada para mostrar nuestro respaldo real: clientes atendidos, soporte 24HS
-            y garantía de 6 meses en cada reparación dentro de CABA.
+            Datos concretos para administraciones y propietarios: experiencia, seguimiento y
+            condiciones claras antes de empezar cada trabajo.
           </p>
 
           <div className="mt-16 grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
@@ -51,7 +51,7 @@ export function SeguridadPage() {
                 Clientes atendidos
               </p>
               <p className="mt-4 text-sm leading-relaxed text-foreground/70">
-                Una cifra que crece con cada trabajo y da confianza a tu administración.
+                Experiencia acumulada en reparaciones, urgencias y mantenimiento edilicio.
               </p>
             </div>
 
@@ -61,7 +61,7 @@ export function SeguridadPage() {
                 Meses de garantía
               </p>
               <p className="mt-4 text-sm leading-relaxed text-foreground/70">
-                Cubrimos las reparaciones con garantía en mano de obra y materiales.
+                Dejamos asentadas las condiciones de garantía según el trabajo realizado.
               </p>
             </div>
 
@@ -73,7 +73,7 @@ export function SeguridadPage() {
                 Soporte urgente
               </p>
               <p className="mt-4 text-sm leading-relaxed text-foreground/70">
-                Coordinamos la atención por WhatsApp para que la falla no frene el uso del edificio.
+                Priorizamos fallas que afectan el funcionamiento del edificio o comercio.
               </p>
             </div>
           </div>

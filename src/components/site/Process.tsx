@@ -3,9 +3,9 @@ import { useReveal } from "@/hooks/use-reveal";
 import { Skeleton } from "@/components/ui/skeleton";
 
 const steps = [
-  { icon: MessageSquare, n: "01", title: "Nos escribís" },
-  { icon: ClipboardCheck, n: "02", title: "Coordinamos y presupuestamos" },
-  { icon: CheckCircle2, n: "03", title: "Lo resolvemos" },
+  { icon: MessageSquare, n: "01", title: "Revelamos el problema" },
+  { icon: ClipboardCheck, n: "02", title: "Presupuestamos con detalle" },
+  { icon: CheckCircle2, n: "03", title: "Ejecutamos y dejamos constancia" },
 ];
 
 function ProcessSkeleton() {
@@ -32,9 +32,9 @@ export function Process() {
             Cómo trabajamos
           </span>
           <h2 className="mt-6 text-4xl md:text-5xl lg:text-6xl font-display font-bold text-primary leading-[1.05]">
-            Tres pasos.
+            Orden desde el primer contacto.
             <br />
-            <span className="text-foreground/30">Sin vueltas.</span>
+            <span className="text-foreground/30">Así trabajamos.</span>
           </h2>
         </div>
 
@@ -48,7 +48,6 @@ export function Process() {
             <ProcessSkeleton />
           ) : (
             <div className="relative grid gap-12 md:grid-cols-3">
-              {/* Línea horizontal */}
               <div className="hidden md:block absolute top-7 left-[12%] right-[12%] h-px bg-gradient-to-r from-transparent via-border to-transparent" />
 
               {steps.map(({ icon: Icon, n, title }, idx) => (

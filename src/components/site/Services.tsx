@@ -1,4 +1,3 @@
-// Servicios premium: cards con identidad visual y efectos por categoría.
 import { Droplets, Hammer, Paintbrush, Wrench, ArrowUpRight } from "lucide-react";
 import { useReveal } from "@/hooks/use-reveal";
 import { whatsappLink } from "@/lib/site";
@@ -7,25 +6,25 @@ const services = [
   {
     icon: Wrench,
     title: "Mantenimiento integral",
-    desc: "Soluciones completas para consorcios y administraciones.",
+    desc: "Atención para consorcios, administraciones y locales comerciales.",
     color: "emerald",
   },
   {
     icon: Droplets,
     title: "Plomería",
-    desc: "Reparaciones, instalaciones y pérdidas con rápida atención.",
+    desc: "Pérdidas, instalaciones y reparaciones con diagnóstico claro.",
     color: "sky",
   },
   {
     icon: Hammer,
     title: "Albañilería",
-    desc: "Refacciones y mantenimiento edilicio con terminaciones firmes.",
+    desc: "Arreglos, refacciones y mantenimiento edilicio con buena terminación.",
     color: "orange",
   },
   {
     icon: Paintbrush,
     title: "Pintura",
-    desc: "Interiores y exteriores con terminaciones prolijas y estilo profesional.",
+    desc: "Interiores, frentes y espacios comunes preparados con criterio.",
     color: "fuchsia",
   },
 ] as const;
@@ -67,9 +66,9 @@ export function Services() {
             Servicios
           </span>
           <h2 className="mt-6 text-4xl md:text-6xl font-display font-bold text-primary leading-[1.05]">
-            Lo que hacemos,
+            Oficios de confianza,
             <br />
-            <span className="text-foreground/40">lo hacemos bien.</span>
+            <span className="text-foreground/40">sin vueltas.</span>
           </h2>
         </div>
 
@@ -139,7 +138,7 @@ export function Services() {
           rel="noopener noreferrer"
           className="mt-12 inline-flex items-center gap-2 text-base md:text-lg font-medium text-primary hover:text-accent transition group"
         >
-          Y mucho más. Consultanos.
+          Consultanos por otros trabajos.
           <ArrowUpRight
             size={20}
             className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition"

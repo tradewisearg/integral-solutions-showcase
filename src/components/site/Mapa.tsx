@@ -17,11 +17,11 @@ export function Mapa() {
             Zona de cobertura
           </span>
           <h2 className="mt-6 text-4xl md:text-5xl lg:text-6xl font-display font-bold text-primary leading-[1.05]">
-            Llevamos soluciones a toda CABA.
+            Trabajamos en toda CABA.
           </h2>
           <p className="mt-6 text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl font-light">
-            Operamos en toda la Ciudad Autónoma de Buenos Aires con atención rápida y servicio
-            profesional.
+            Coordinamos visitas y urgencias en la Ciudad Autónoma de Buenos Aires, con horarios y
+            alcance claros desde el primer contacto.
           </p>
         </div>
 

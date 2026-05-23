@@ -1,9 +1,8 @@
-// Hero premium: imagen full, overlay suave, texto izquierda, badges.
 import heroImg from "@/assets/hero.jpg";
 import { whatsappLink } from "@/lib/site";
 import { ArrowRight } from "lucide-react";
 
-const badges = ["24HS Urgencias", "+20 años de experiencia", "Operarios matriculados"];
+const badges = ["Urgencias 24 h", "+20 años en obra", "Trabajos con garantía"];
 
 export function Hero() {
   return (
@@ -25,11 +24,11 @@ export function Hero() {
       <div className="relative mx-auto max-w-7xl px-6 lg:px-10 py-24 lg:py-32 text-white w-full text-center">
         <div className="mx-auto max-w-3xl animate-[fade-up_0.9s_ease-out_both]">
           <h1 className="mt-8 font-display font-extrabold leading-[1.02] text-5xl md:text-7xl lg:text-[5.5rem]">
-            Todas las soluciones, en un solo lugar.
+            Todas las soluciones en <p className="text-accent">un solo lugar.</p>
           </h1>
           <p className="mt-8 max-w-xl text-lg md:text-xl text-white/80 leading-relaxed font-light">
-            Atención las 24HS en CABA. Presupuesto gratis, respuesta en menos de 1 hora y trabajo
-            prolijo sin sorpresas.
+            Plomería, albañilería, pintura y reparaciones generales en CABA. Presupuesto claro,
+            coordinación ágil y trabajo prolijo.
           </p>
 
           <div className="mt-10 flex flex-wrap justify-center gap-2.5">
@@ -49,10 +48,11 @@ export function Hero() {
               <h2 className="text-4xl md:text-6xl lg:text-7xl font-display font-extrabold leading-[1.05] tracking-tight text-white">
                 ¿Tenés un problema
                 <br />
-                <span className="text-accent">que resolver?</span>
+                <span className="text-accent">en el edificio?</span>
               </h2>
               <p className="mt-8 text-lg md:text-xl text-white/80 max-w-xl mx-auto font-light">
-                Nos ocupamos de todo con presupuesto, trabajo ordenado y atención urgente.
+                Contanos qué pasó y coordinamos la visita con la información necesaria desde el
+                primer mensaje.
               </p>
               <a
                 href={whatsappLink}

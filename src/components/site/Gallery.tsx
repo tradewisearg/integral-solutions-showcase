@@ -1,4 +1,3 @@
-// Galería protagonista: slider grande con cards y tag "Trabajo real en CABA".
 import { useRef } from "react";
 import { ChevronLeft, ChevronRight, MapPin } from "lucide-react";
 import g1 from "@/assets/gallery-1.jpg";
@@ -12,7 +11,7 @@ const items = [
     src: g1,
     tag: "Mantenimiento",
     date: "Abril 2026",
-    title: "Tablero eléctrico",
+    title: "Revisión de tablero",
     place: "Recoleta",
   },
   { src: g3, tag: "Pintura", date: "Marzo 2026", title: "Pintura de palier", place: "Caballito" },
@@ -20,7 +19,7 @@ const items = [
     src: g4,
     tag: "Albañilería",
     date: "Marzo 2026",
-    title: "Arreglo estructural",
+    title: "Reparación de mampostería",
     place: "Belgrano",
   },
 ];
@@ -43,9 +42,9 @@ export function Gallery() {
               Trabajos recientes
             </span>
             <h2 className="mt-6 text-4xl md:text-6xl font-display font-bold text-primary leading-[1.05]">
-              Trabajos reales,
+              Oficio a la vista,
               <br />
-              <span className="text-foreground/40">resultados que se ven.</span>
+              <span className="text-foreground/40">con registro de obra.</span>
             </h2>
           </div>
           <div className="flex gap-2">

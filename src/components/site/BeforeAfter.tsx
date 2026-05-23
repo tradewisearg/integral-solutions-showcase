@@ -5,8 +5,8 @@ import g3 from "@/assets/gallery-3.jpg";
 import g4 from "@/assets/gallery-4.jpg";
 
 const imagePairs = [
-  { before: g1, after: g2, label: "Reparación - Antes y Después" },
-  { before: g3, after: g4, label: "Transformación - Antes y Después" },
+  { before: g1, after: g2 },
+  { before: g3, after: g4 },
 ];
 
 export function BeforeAfter() {
@@ -32,11 +32,11 @@ export function BeforeAfter() {
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="max-w-3xl">
           <h2 className="mt-6 text-4xl md:text-6xl font-display font-bold text-primary leading-[1.05]">
-            Cambios reales y comprobables.
+            Trabajos que se pueden mostrar.
           </h2>
           <p className="mt-6 text-lg text-muted-foreground leading-relaxed max-w-2xl font-light">
-            Calidad garantizada que se ve en cada detalle. Antes y después de nuestros trabajos, la
-            diferencia es clara.
+            Registramos avances y terminaciones para que cada arreglo quede documentado, desde el
+            estado inicial hasta la entrega.
           </p>
         </div>
 

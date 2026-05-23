@@ -1,13 +1,12 @@
-// Navbar minimalista premium.
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { whatsappLink, COMPANY_NAME } from "@/lib/site";
 
 const navLinks = [
-  { href: "#servicios", label: "Servicios" },
+  { href: "/#servicios", label: "Servicios" },
   { href: "/seguridad", label: "Seguridad" },
-  { href: "#proceso", label: "Cómo trabajamos" },
-  { href: "#faq", label: "FAQ" },
+  { href: "/#proceso", label: "Cómo trabajamos" },
+  { href: "/#faq", label: "FAQ" },
 ];
 
 export function Navbar() {
@@ -16,7 +15,7 @@ export function Navbar() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-slate-200/70 bg-white/95 shadow-sm backdrop-blur-xl">
       <div className="mx-auto max-w-7xl px-6 lg:px-10 h-20 flex items-center justify-between">
-        <a href="#inicio" className="flex items-center gap-3 group">
+        <a href="/#inicio" className="flex items-center gap-3 group">
           <img src="/logo-hero.svg" alt="Logo de la empresa" className="h-10 w-auto" />
 
           <span className="font-display font-extrabold tracking-tight text-primary text-lg leading-none">

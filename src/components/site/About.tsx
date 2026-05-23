@@ -1,4 +1,3 @@
-// Quiénes somos: imagen + texto, layout asimétrico premium.
 import g1 from "@/assets/gallery-1.jpg";
 import { useReveal } from "@/hooks/use-reveal";
 
@@ -17,11 +16,11 @@ export function About() {
             Quiénes somos
           </span>
           <h2 className="mt-6 text-4xl md:text-5xl lg:text-6xl font-display font-bold text-primary leading-[1.05]">
-            Más de 20 años resolviendo problemas reales.
+            Más de 20 años trabajando en edificios de CABA.
           </h2>
           <p className="mt-8 text-lg md:text-xl text-muted-foreground leading-relaxed font-light">
-            Trabajamos con rapidez, orden y responsabilidad en consorcios de CABA. Nuestro objetivo
-            es simple: que no tengas que preocuparte.
+            Nos movemos con orden, oficio y responsabilidad. Sabemos tratar con administraciones,
+            encargados y vecinos para que cada arreglo avance sin complicar el día a día.
           </p>
         </div>
 

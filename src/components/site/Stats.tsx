@@ -1,11 +1,10 @@
-// Stats: bloque diferencial estilo agencia.
 import { useReveal } from "@/hooks/use-reveal";
 
 const stats = [
   { value: "+20", label: "Años de experiencia" },
-  { value: "<1h", label: "Tiempo de respuesta" },
-  { value: "24hs", label: "Para presupuesto" },
-  { value: "24/7", label: "Atención de urgencias" },
+  { value: "CABA", label: "Zona de trabajo" },
+  { value: "24 h", label: "Urgencias coordinadas" },
+  { value: "6 m", label: "Garantía según trabajo" },
 ];
 
 export function Stats() {
@@ -20,10 +19,10 @@ export function Stats() {
       >
         <div className="max-w-3xl">
           <span className="text-xs font-semibold uppercase tracking-[0.25em] text-accent">
-            Por qué elegirnos
+            Respaldo
           </span>
           <h2 className="mt-6 text-4xl md:text-5xl font-display font-bold leading-[1.1]">
-            Números que respaldan lo que decimos.
+            Datos claros antes de empezar.
           </h2>
         </div>
 
