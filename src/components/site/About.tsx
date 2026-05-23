@@ -20,8 +20,8 @@ export function About() {
             Más de 20 años resolviendo problemas reales.
           </h2>
           <p className="mt-8 text-lg md:text-xl text-muted-foreground leading-relaxed font-light">
-            Trabajamos con rapidez, orden y responsabilidad en consorcios de
-            CABA. Nuestro objetivo es simple: que no tengas que preocuparte.
+            Trabajamos con rapidez, orden y responsabilidad en consorcios de CABA. Nuestro objetivo
+            es simple: que no tengas que preocuparte.
           </p>
         </div>
 

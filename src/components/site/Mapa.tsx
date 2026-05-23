@@ -20,7 +20,8 @@ export function Mapa() {
             Llevamos soluciones a toda CABA.
           </h2>
           <p className="mt-6 text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl font-light">
-            Operamos en toda la Ciudad Autónoma de Buenos Aires con atención rápida y servicio profesional.
+            Operamos en toda la Ciudad Autónoma de Buenos Aires con atención rápida y servicio
+            profesional.
           </p>
         </div>
 

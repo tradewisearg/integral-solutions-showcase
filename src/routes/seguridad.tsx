@@ -1,26 +1,7 @@
 import { useEffect, useState } from "react";
-import { createFileRoute } from "@tanstack/react-router";
-import { Navbar } from "@/components/site/Navbar";
-import { BeforeAfter } from "@/components/site/BeforeAfter";
-import { Footer } from "@/components/site/Footer";
-import { WhatsAppFab } from "@/components/site/WhatsAppFab";
+// Este archivo ya no se utiliza - la aplicación usa App.tsx sin routing
 
-export const Route = createFileRoute("/seguridad")({
-  component: SeguridadPage,
-  head: () => ({
-    meta: [
-      { title: "Seguridad y respaldo · Soluciones Integrales" },
-      {
-        name: "description",
-        content:
-          "Seguridad y respaldo para edificios en CABA. Garantía de 6 meses, respuesta urgente y trabajos documentados.",
-      },
-      { name: "robots", content: "index, follow" },
-    ],
-  }),
-});
-
-function SeguridadPage() {
+export function SeguridadPage() {
   const [count, setCount] = useState(0);
 
   useEffect(() => {

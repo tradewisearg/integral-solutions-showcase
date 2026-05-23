@@ -8,9 +8,21 @@ import g4 from "@/assets/gallery-4.jpg";
 
 const items = [
   { src: g2, tag: "Plomería", date: "Mayo 2026", title: "Reparación de pérdida", place: "Palermo" },
-  { src: g1, tag: "Mantenimiento", date: "Abril 2026", title: "Tablero eléctrico", place: "Recoleta" },
+  {
+    src: g1,
+    tag: "Mantenimiento",
+    date: "Abril 2026",
+    title: "Tablero eléctrico",
+    place: "Recoleta",
+  },
   { src: g3, tag: "Pintura", date: "Marzo 2026", title: "Pintura de palier", place: "Caballito" },
-  { src: g4, tag: "Albañilería", date: "Marzo 2026", title: "Arreglo estructural", place: "Belgrano" },
+  {
+    src: g4,
+    tag: "Albañilería",
+    date: "Marzo 2026",
+    title: "Arreglo estructural",
+    place: "Belgrano",
+  },
 ];
 
 export function Gallery() {

@@ -14,7 +14,7 @@ export function Footer() {
             Mantenimiento integral en CABA. Rápido, prolijo y sin complicaciones.
           </p>
         </div>
-        
+
         <div className="md:text-right">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">Escribinos</p>
           <a

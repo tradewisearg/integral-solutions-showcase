@@ -33,9 +33,7 @@ export function Stats() {
               <p className="font-display font-extrabold text-5xl md:text-6xl lg:text-7xl tracking-tight text-accent">
                 {s.value}
               </p>
-              <p className="mt-3 text-sm md:text-base text-white/70 font-light">
-                {s.label}
-              </p>
+              <p className="mt-3 text-sm md:text-base text-white/70 font-light">{s.label}</p>
             </div>
           ))}
         </div>

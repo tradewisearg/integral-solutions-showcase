@@ -57,21 +57,25 @@ export function Process() {
                   className="relative flex flex-col items-start md:items-center md:text-center group"
                   style={{ animationDelay: `${idx * 100}ms` }}
                 >
-                <div className="grid place-items-center w-14 h-14 md:w-16 md:h-16 rounded-full bg-gradient-to-br from-accent/10 to-accent/5 border border-accent/20 text-accent group-hover:border-accent/50 group-hover:shadow-[0_0_30px_rgba(234,179,8,0.2)] relative z-10 transition-all duration-300">
-                  <Icon size={24} strokeWidth={1.5} className="group-hover:scale-110 transition-transform duration-300" />
+                  <div className="grid place-items-center w-14 h-14 md:w-16 md:h-16 rounded-full bg-gradient-to-br from-accent/10 to-accent/5 border border-accent/20 text-accent group-hover:border-accent/50 group-hover:shadow-[0_0_30px_rgba(234,179,8,0.2)] relative z-10 transition-all duration-300">
+                    <Icon
+                      size={24}
+                      strokeWidth={1.5}
+                      className="group-hover:scale-110 transition-transform duration-300"
+                    />
+                  </div>
+                  <span className="mt-6 text-xs font-semibold tracking-[0.3em] text-accent/70 uppercase">
+                    Paso {n}
+                  </span>
+                  <h3 className="mt-3 text-2xl md:text-3xl font-display font-bold text-primary leading-snug">
+                    {title}
+                  </h3>
                 </div>
-                <span className="mt-6 text-xs font-semibold tracking-[0.3em] text-accent/70 uppercase">
-                  Paso {n}
-                </span>
-                <h3 className="mt-3 text-2xl md:text-3xl font-display font-bold text-primary leading-snug">
-                  {title}
-                </h3>
-              </div>
-            ))}
-          </div>
-        )}
+              ))}
+            </div>
+          )}
+        </div>
       </div>
-    </div>
     </section>
   );
 }

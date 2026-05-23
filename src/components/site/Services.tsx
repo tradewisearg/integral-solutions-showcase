@@ -4,7 +4,7 @@ import { useReveal } from "@/hooks/use-reveal";
 import { whatsappLink } from "@/lib/site";
 
 const services = [
-    {
+  {
     icon: Wrench,
     title: "Mantenimiento integral",
     desc: "Soluciones completas para consorcios y administraciones.",
@@ -27,7 +27,7 @@ const services = [
     title: "Pintura",
     desc: "Interiores y exteriores con terminaciones prolijas y estilo profesional.",
     color: "fuchsia",
-  }
+  },
 ] as const;
 
 const colorMap = {
@@ -84,54 +84,54 @@ export function Services() {
               const styles = colorMap[color];
               return (
                 <article
-                key={title}
-                className={`group relative overflow-hidden rounded-2xl bg-card p-8 md:p-10 border ${styles.border} hover-lift hover:shadow-[var(--shadow-card)]`}
-              >
-                <div
-                  className={`absolute inset-x-8 top-6 h-28 rounded-[2rem] blur-3xl opacity-70 ${styles.badge}`}
-                />
-                <div
-                  className={`absolute inset-x-0 top-0 h-24 bg-gradient-to-br ${styles.accent} opacity-90`}
-                />
-                {title === "Pintura" ? (
-                  <>
-                    <div className="absolute -left-6 top-16 h-24 w-24 rounded-full bg-fuchsia-500/20 blur-2xl" />
-                    <div className="absolute right-6 top-20 h-16 w-16 rounded-full bg-fuchsia-500/25 blur-xl" />
-                    <div className="absolute left-10 bottom-10 h-6 w-6 rounded-full bg-fuchsia-500/90" />
-                    <div className="absolute left-16 bottom-6 h-9 w-9 rounded-full bg-fuchsia-500/80" />
-                    <div className="absolute left-24 bottom-14 h-5 w-5 rounded-full bg-fuchsia-500/90" />
-                  </>
-                ) : title === "Plomería" ? (
-                  <>
-                    <div className="absolute right-7 top-20 h-16 w-16 rounded-full bg-sky-500/15 blur-xl" />
-                    <div className="absolute right-16 top-8 h-10 w-10 rounded-full bg-sky-500/20 blur-2xl" />
-                    <div className="absolute left-10 bottom-10 h-6 w-6 rounded-full bg-sky-500/80" />
-                  </>
-                ) : title === "Albañilería" ? (
-                  <>
-                    <div className="absolute inset-x-8 top-12 h-2 rounded-full bg-orange-500/15" />
-                    <div className="absolute left-6 top-24 h-3 w-16 rounded-full bg-orange-500/20" />
-                    <div className="absolute right-6 bottom-16 h-3 w-10 rounded-full bg-orange-500/20" />
-                  </>
-                ) : (
-                  <>
-                    <div className="absolute right-8 top-16 h-20 w-20 rounded-full bg-emerald-500/15 blur-2xl" />
-                    <div className="absolute left-10 bottom-12 h-8 w-8 rounded-full bg-emerald-500/80" />
-                  </>
-                )}
+                  key={title}
+                  className={`group relative overflow-hidden rounded-2xl bg-card p-8 md:p-10 border ${styles.border} hover-lift hover:shadow-[var(--shadow-card)]`}
+                >
+                  <div
+                    className={`absolute inset-x-8 top-6 h-28 rounded-[2rem] blur-3xl opacity-70 ${styles.badge}`}
+                  />
+                  <div
+                    className={`absolute inset-x-0 top-0 h-24 bg-gradient-to-br ${styles.accent} opacity-90`}
+                  />
+                  {title === "Pintura" ? (
+                    <>
+                      <div className="absolute -left-6 top-16 h-24 w-24 rounded-full bg-fuchsia-500/20 blur-2xl" />
+                      <div className="absolute right-6 top-20 h-16 w-16 rounded-full bg-fuchsia-500/25 blur-xl" />
+                      <div className="absolute left-10 bottom-10 h-6 w-6 rounded-full bg-fuchsia-500/90" />
+                      <div className="absolute left-16 bottom-6 h-9 w-9 rounded-full bg-fuchsia-500/80" />
+                      <div className="absolute left-24 bottom-14 h-5 w-5 rounded-full bg-fuchsia-500/90" />
+                    </>
+                  ) : title === "Plomería" ? (
+                    <>
+                      <div className="absolute right-7 top-20 h-16 w-16 rounded-full bg-sky-500/15 blur-xl" />
+                      <div className="absolute right-16 top-8 h-10 w-10 rounded-full bg-sky-500/20 blur-2xl" />
+                      <div className="absolute left-10 bottom-10 h-6 w-6 rounded-full bg-sky-500/80" />
+                    </>
+                  ) : title === "Albañilería" ? (
+                    <>
+                      <div className="absolute inset-x-8 top-12 h-2 rounded-full bg-orange-500/15" />
+                      <div className="absolute left-6 top-24 h-3 w-16 rounded-full bg-orange-500/20" />
+                      <div className="absolute right-6 bottom-16 h-3 w-10 rounded-full bg-orange-500/20" />
+                    </>
+                  ) : (
+                    <>
+                      <div className="absolute right-8 top-16 h-20 w-20 rounded-full bg-emerald-500/15 blur-2xl" />
+                      <div className="absolute left-10 bottom-12 h-8 w-8 rounded-full bg-emerald-500/80" />
+                    </>
+                  )}
 
-                <Icon className={`${styles.icon} relative z-10`} size={32} strokeWidth={1.5} />
-                <h3 className="relative z-10 mt-10 text-xl md:text-2xl font-display font-bold text-primary">
-                  {title}
-                </h3>
-                <p className="relative z-10 mt-3 text-sm md:text-base text-muted-foreground leading-relaxed font-light">
-                  {desc}
-                </p>
-              </article>
-            );
-          })}
+                  <Icon className={`${styles.icon} relative z-10`} size={32} strokeWidth={1.5} />
+                  <h3 className="relative z-10 mt-10 text-xl md:text-2xl font-display font-bold text-primary">
+                    {title}
+                  </h3>
+                  <p className="relative z-10 mt-3 text-sm md:text-base text-muted-foreground leading-relaxed font-light">
+                    {desc}
+                  </p>
+                </article>
+              );
+            })}
+          </div>
         </div>
-      </div>
 
         <a
           href={whatsappLink}
